@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TableRow>
+		<TextView android:text="Minimum Tip Percent" android:gravity="left"
+			android:padding="3dip" />
+	</TableRow>
+
+	<TableRow>
+		<com.jcake2.tipcalculator.HorizontalSlider
+			android:id="@+id/min_slider" android:layout_width="250dip"
+			android:layout_height="20dip" android:max="500"
+			android:layout_centerHorizontal="true"
+			android:progressDrawable="@drawable/progress_bar">
+		</com.jcake2.tipcalculator.HorizontalSlider>
+
+		<TextView android:id="@+id/min_text" android:text="0 %"
+			android:gravity="right" android:padding="3dip" />
+	</TableRow>
+
+
+	<TableRow>
+		<TextView android:text="Maximum Tip Percent" android:gravity="left"
+			android:padding="3dip" />
+	</TableRow>
+
+	<TableRow>
+		<com.jcake2.tipcalculator.HorizontalSlider
+			android:id="@+id/max_slider" android:layout_width="250dip"
+			android:layout_height="20dip" android:max="500"
+			android:layout_centerHorizontal="true"
+			android:progressDrawable="@drawable/max_progress_bar">
+		</com.jcake2.tipcalculator.HorizontalSlider>
+		<TextView android:id="@+id/max_text" android:text="0 %"
+			android:gravity="right" android:padding="3dip" />
+	</TableRow>
+
+
+	<TableRow>
+		<Button android:id="@+id/back_button" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Go Back"
+			android:onClick="optionsDone" />
+	</TableRow>
+
+</TableLayout>

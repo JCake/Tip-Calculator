@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:stretchColumns="1">
+	<TableRow>
+		<RadioGroup android:id="@+id/generous"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="horizontal">
+			<RadioButton android:id="@+id/yes" android:text="yes">
+			</RadioButton>
+			<RadioButton android:id="@+id/no" android:text="no"
+				android:checked="true">
+			</RadioButton>
+		</RadioGroup>
+		<TextView android:text="Feeling generous?" android:gravity="left"
+			android:padding="3dip" />
+	</TableRow>
+
+	<TableRow>
+		<RadioGroup android:id="@+id/niceWaiter"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="horizontal">
+			<RadioButton android:id="@+id/yes" android:text="yes"
+				android:checked="true">
+			</RadioButton>
+			<RadioButton android:id="@+id/no" android:text="no">
+			</RadioButton>
+		</RadioGroup>
+		<TextView android:text="Was the waiter/waitress nice?"
+			android:gravity="left" android:padding="3dip" />
+	</TableRow>
+
+	<TableRow>
+		<RadioGroup android:id="@+id/drinkRefills"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="horizontal">
+			<RadioButton android:id="@+id/yes" android:text="yes"
+				android:checked="true">
+			</RadioButton>
+			<RadioButton android:id="@+id/no" android:text="no">
+			</RadioButton>
+		</RadioGroup>
+		<TextView android:text="Drinks kept refilled?"
+			android:gravity="left" android:padding="3dip" />
+	</TableRow>
+
+	<TableRow>
+		<RadioGroup android:id="@+id/correctOrder"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="horizontal">
+			<RadioButton android:id="@+id/yes" android:text="yes"
+				android:checked="true">
+			</RadioButton>
+			<RadioButton android:id="@+id/no" android:text="no">
+			</RadioButton>
+		</RadioGroup>
+		<TextView android:text="Got the correct order?"
+			android:gravity="left" android:padding="3dip" />
+	</TableRow>
+
+	<TableRow>
+		<EditText android:id="@+id/total">
+		</EditText>
+		<TextView android:text="Total bill?" android:gravity="left"
+			android:padding="3dip" />
+	</TableRow>
+
+	<TableRow>
+		<Button android:id="@+id/send_button" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/send_text"
+			android:onClick="calculate" />
+	</TableRow>
+
+	<TableRow>
+		<Button android:id="@+id/options_button" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/options_text"
+			android:onClick="options" />
+	</TableRow>
+	
+		<TableRow>
+		<Button android:id="@+id/help_button" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="HELP"
+			android:onClick="help" />
+	</TableRow>
+</TableLayout>

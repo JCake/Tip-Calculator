@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TableRow>
+		<TextView android:id="@+id/max_text" android:text="To calculate a tip that varies based on your quality of service, answer the yes/no questions, enter your total bill, and click 'Calculate Tip'.  To change the possible range of percentages for your tip, click on 'General Settings' and slide the bars to select the minimum and maximum amount you are willing to tip, from 0% to 50%.  To calculate a fixed tip percentage regardless of service, set the minimum and maximum tip percentages to the same value.  If you do this, the tip will always be calculated based on this percentage, regardless of how you answer the questions about service.  By default, the minimum tip percentage is 10% and the maximum is 25%.  If you change these defaults, your settings will be saved between Tip Calculator sessions.  Tip Calculator will not be held responsible for any blatant undertipping performed by its user.  If you have questions, comments, or suggestions, please email tipcalchelp@gmail.com"
+			android:gravity="left" android:padding="3dip" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>
+	</TableRow>
+
+
+	<TableRow>
+		<Button android:id="@+id/help_back_button" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Go Back"
+			android:onClick="goToMain" />
+	</TableRow>
+
+</TableLayout>
